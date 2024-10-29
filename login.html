@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .login-container {
+            flex: 1;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+        .form-field {
+            margin-bottom: 15px;
+        }
+        .form-field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+        @media(max-width:430px){
+            .container{
+                flex-direction:column;
+            }
+            .login-container{
+                width:80%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form class="login-container" action="diwali.html">
+                <div class="form-field">
+                    <input type="text" 
+                    required 
+                    placeholder="Enter the username" />
+                </div>
+                <div class="form-field">
+                    <input type="password" 
+                    required 
+                    placeholder="Enter the password" />
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="index.html">Sign up here</a></p>
+            </form>
+            <img src="https://img.freepik.com/free-vector/happy-diwali-religious-traditional-festival-card-background_1035-29718.jpg">
+
+    </div>
+</body>
+</html>
